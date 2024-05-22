@@ -4,7 +4,7 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 export const NEXT_AUTH_OPTIONS: AuthOptions = {
   providers: [
     CredentialsProvider({
-      name: 'Template',
+      name: 'NetHistory',
       credentials: {
         username: {
           label: 'Username',
