@@ -12,6 +12,7 @@ export default function Home() {
       <QrReader
         onResult={(result, error) => {
           if (!!result) {
+            // @ts-ignore
             setData(result?.text);
           }
 
@@ -19,6 +20,7 @@ export default function Home() {
             console.info(error);
           }
         }}
+        // @ts-ignore
         style={{ width: '100%' }}
         constraints={{
           facingMode: 'environment',
